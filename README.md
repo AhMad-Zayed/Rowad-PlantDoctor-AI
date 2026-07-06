@@ -1,10 +1,11 @@
 # 🌱 Rowad-PlantDoctor-AI (طبيب النباتات الذكي)
 
 ![فريق العمل](./docs/screenshots/team-photo.jpg)
-*فريق المشروع: طالبات مدرسة رواد العلم بإشراف أحمد زايد، مدرّب ومعد الكورس، مؤسس Atlahub*
+*فريق المشروع بإشراف الأستاذ أحمد زايد (مدرّب ومعد الكورس، مؤسس Atlahub).*
 
 ## 🚀 مقدمة سريعة
 مشروع "طبيب النباتات الذكي" هو تطبيق هواتف ذكية طُوِّر بأيدي طالبات الصف العاشر لمساعدة الجميع (من هواة ومزارعين) على اكتشاف أمراض النباتات فوراً من خلال التقاط صورة لها. يعتمد التطبيق على الذكاء الاصطناعي لفهم حالة النبتة وتقديم خطوات العلاج مباشرة.
+هذا مشروع مدرسي لطالبات الصف العاشر بدعم من Aischool360، بإشراف وتدريب وإعداد الأستاذ أحمد زايد (Atlahub).
 
 ## 💡 ما هو المشروع؟
 هو مشروع تعليمي وتطبيقي يدمج بين التكنولوجيا الحديثة وحل المشكلات البيئية. يتيح التطبيق للمستخدم تصوير الأوراق المتضررة للنباتات، ليقوم فوراً بتحليلها وإرجاع تشخيص دقيق للمرض بالإضافة إلى طرق المعالجة. الهدف من المشروع هو تعليم الطالبات كيفية توظيف تقنيات الذكاء الاصطناعي (AI) في تطوير تطبيقات عملية تخدم المجتمع.
@@ -18,6 +19,13 @@
 - **Google Stitch**: أداة تصميم واجهات تعتمد على الذكاء الاصطناعي (AI UI design tool) استُخدمت لتصميم شاشات التطبيق بشكل عصري وسريع.
 - **Gemini API**: نموذج الذكاء الاصطناعي الأساسي لمعالجة الصور وفهم وتوليد النصوص التشخيصية والعلاجية بدقة عالية.
 - **Flutter & Dart**: إطار العمل ولغة البرمجة المستخدمة لبناء التطبيق ليعمل على أنظمة الهواتف الذكية.
+
+## 📁 هيكلية مجلدات المشروع (Project Structure)
+يحتوي المشروع على عدة مجلدات أساسية تم إنشاؤها تلقائياً بواسطة إطار العمل Flutter. إليك دور كل منها:
+- **`android`, `ios`, `linux`, `macos`, `windows`, `web`**: هذه المجلدات تحتوي على الكود الخاص ببناء التطبيق لكل منصة بشكل مستقل. هي ملفات بناء تلقائية ولا حاجة للتعديل عليها يدوياً في معظم الأحيان.
+- **`lib`**: هذا هو المجلد الأساسي والأهم، ويحتوي على الكود المصدري للتطبيق بأكمله المكتوب بلغة Dart. جميع التعديلات والبرمجة تتم داخل هذا المجلد.
+- **`test`**: يحتوي على ملفات الاختبارات البرمجية للتأكد من خلو التطبيق من الأخطاء.
+- **`stitch_html`**: مجلد يحتوي على تصاميم واجهات المستخدم المبدئية التي تم استخراجها من أداة Google Stitch.
 
 ## 📸 صور البرنامج (Screenshots)
 
@@ -63,15 +71,16 @@
 
 | الاسم / الحساب | الدور | ملاحظات |
 |---|---|---|
-| [@lamaroabd-oss](https://github.com/lamaroabd-oss) | مطوّرة (Author / Contributor) | طالبة، مدرسة رواد العلم |
-| [@aseeldesna-coder](https://github.com/aseeldesna-coder) | مطوّرة (Author / Contributor) | طالبة، مدرسة رواد العلم |
-| [@sara2najeho](https://github.com/sara2najeho) | مطوّرة (Author / Contributor) | طالبة، مدرسة رواد العلم |
-| [@ghaz](https://github.com/soltanghazal59-debug/ghaz) | مطوّرة (Author / Contributor) | طالبة، مدرسة رواد العلم |
-| [@remasayyad932-sudo](https://github.com/remasayyad932-sudo) | مطوّرة (Author / Contributor) | طالبة، مدرسة رواد العلم |
-| [@noormohamad17](https://github.com/noormohamad17) | مطوّرة (Author / Contributor) | طالبة، مدرسة رواد العلم |
-| [@toleenabusbeih-dotcom](https://github.com/toleenabusbeih-dotcom) | مطوّرة (Author / Contributor) | طالبة، مدرسة رواد العلم |
-| [@fshweiki171-netizen](https://github.com/fshweiki171-netizen) | مطوّرة (Author / Contributor) | طالبة، مدرسة رواد العلم |
+| [@lamaroabd-oss](https://github.com/lamaroabd-oss) | مطوّرة (Author / Contributor) | طالبة مبرمجة |
+| [@aseeldesna-coder](https://github.com/aseeldesna-coder) | مطوّرة (Author / Contributor) | طالبة مبرمجة |
+| [@sara2najeho](https://github.com/sara2najeho) | مطوّرة (Author / Contributor) | طالبة مبرمجة |
+| [@soltanghazal59-debug](https://github.com/soltanghazal59-debug/ghaz) | مطوّرة (Author / Contributor) | طالبة مبرمجة |
+| [@remasayyad932-sudo](https://github.com/remasayyad932-sudo) | مطوّرة (Author / Contributor) | طالبة مبرمجة |
+| [@noormohamad17](https://github.com/noormohamad17) | مطوّرة (Author / Contributor) | طالبة مبرمجة |
+| [@toleenabusbeih-dotcom](https://github.com/toleenabusbeih-dotcom) | مطوّرة (Author / Contributor) | طالبة مبرمجة |
+| [@fshweiki171-netizen](https://github.com/fshweiki171-netizen) | مطوّرة (Author / Contributor) | طالبة مبرمجة |
 | **Ahmad Zayed (أحمد زايد)** | المشرف، المدرّب، ومُعِد الكورس | مؤسس شركة [Atlahub](https://atlahub.tech/) |
+| **الأستاذة آلاء** | المعلمة المشرفة الأكاديمية (Academic Co-Advisor) | مشرفة أكاديمية |
 
 شكر وتقدير لكل من **Google Stitch** و **Gemini** لدورهما المحوري في تسريع عملية البناء البرمجي والتصميمي.
 

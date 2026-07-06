@@ -1,6 +1,6 @@
 # Rowad-PlantDoctor-AI Custom Educational License
 
-**Copyright (c) 2026 Rowad Al-Elem School Students and Ahmad Zayed (Atlahub).**
+**Copyright (c) 2026 Tenth Grade Students and Ahmad Zayed (Atlahub).**
 
 ## شروط وأحكام الاستخدام (Terms and Conditions of Use)
 
