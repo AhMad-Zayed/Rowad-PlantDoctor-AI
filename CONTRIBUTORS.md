@@ -12,5 +12,5 @@
 | [@noormohamad17](https://github.com/noormohamad17) | مطوّرة (Author / Developer) | طالبة، مدرسة رواد العلم |
 | [@toleenabusbeih-dotcom](https://github.com/toleenabusbeih-dotcom) | مطوّرة (Author / Developer) | طالبة، مدرسة رواد العلم |
 | [@fshweiki171-netizen](https://github.com/fshweiki171-netizen) | مطوّرة (Author / Developer) | طالبة، مدرسة رواد العلم |
-| **Ahmad Zayed** | المشرف (Supervisor) | مؤسس شركة [Atlahub](https://atlahub.tech/) للتكنولوجيا |
+| **Ahmad Zayed (أحمد زايد)** | المشرف والمدرب ومُعد المادة (Supervisor & Trainer) | مؤسس شركة [Atlahub](https://atlahub.tech/) للتكنولوجيا |
 | **[اسم المعلمة]** | المشرفة الأكاديمية (Co-Advisor) | معلمة في مدرسة رواد العلم |

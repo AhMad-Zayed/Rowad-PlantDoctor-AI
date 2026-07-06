@@ -78,8 +78,8 @@
   - [@toleenabusbeih-dotcom](https://github.com/toleenabusbeih-dotcom)
   - [@fshweiki171-netizen](https://github.com/fshweiki171-netizen)
 
-- **المشرف (Supervisor):**
-  - **Ahmad Zayed** (مؤسس شركة [Atlahub](https://atlahub.tech/))
+- **المشرف والمدرب ومُعد المادة (Supervisor & Trainer):**
+  - **Ahmad Zayed (أحمد زايد)** (مؤسس شركة [Atlahub](https://atlahub.tech/))
 
 - **المعلمة المشرفة (Academic Co-Advisor):**
   - **[اسم المعلمة]**
