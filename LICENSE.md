@@ -1,6 +1,6 @@
 # Rowad-PlantDoctor-AI Custom Educational License
 
-**Copyright (c) 2026 Rowad Al-Elem School Students, Ahmad Zayed (AtlaHub), and Co-Advisor.**
+**Copyright (c) 2026 Rowad Al-Elem School Students and Ahmad Zayed (Atlahub).**
 
 ## شروط وأحكام الاستخدام (Terms and Conditions of Use)
 
@@ -18,10 +18,17 @@ This project is licensed under a custom educational and non-commercial license. 
 ### 3. حفظ الحقوق ونسبة العمل (Attribution)
 أي استخدام أو نسخة معدلة أو منشورة من هذا المشروع يجب أن تتضمن بشكل واضح نسبة العمل لأصحابه كما يلي:
 Any use, modified version, or publication of this project must clearly attribute the work to its owners as follows:
-- **اسم المشروع الأصلي:** Rowad-PlantDoctor-AI (طبيب النباتات الذكي).
-- **الطالبات (Authors):** طالبات مدرسة رواد العلم المشاركات في المشروع.
-- **المشرف (Supervisor):** Ahmad Zayed (Founder of [Atlahub](https://atlahub.tech/)).
-- **المعلمة المشرفة (Co-Advisor):** [اسم المعلمة].
+- **اسم المشروع الأصلي:** Rowad-PlantDoctor-AI
+- **الطالبات (Authors):** 
+  - [@lamaroabd-oss](https://github.com/lamaroabd-oss)
+  - [@aseeldesna-coder](https://github.com/aseeldesna-coder)
+  - [@sara2najeho](https://github.com/sara2najeho)
+  - [@soltanghazal59-debug](https://github.com/soltanghazal59-debug/ghaz)
+  - [@remasayyad932-sudo](https://github.com/remasayyad932-sudo)
+  - [@noormohamad17](https://github.com/noormohamad17)
+  - [@toleenabusbeih-dotcom](https://github.com/toleenabusbeih-dotcom)
+  - [@fshweiki171-netizen](https://github.com/fshweiki171-netizen)
+- **المشرف والمدرّب ومعد الكورس (Supervisor / Coach / Course Creator):** Ahmad Zayed (مؤسس شركة [Atlahub](https://atlahub.tech/)).
 
 ### 4. إخلاء المسؤولية (Disclaimer of Warranty)
 - يُقدم هذا المشروع "كما هو" (as-is) دون أي ضمانات من أي نوع، صريحة أو ضمنية. المطورون والمشرفون غير مسؤولين عن أي أضرار قد تنشأ عن استخدام هذا المشروع.
