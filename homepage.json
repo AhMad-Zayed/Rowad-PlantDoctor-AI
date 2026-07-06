@@ -1,0 +1,28 @@
+{
+  "id": 9,
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "text": "{\"name\":\"projects/15256257566096176068/screens/35b4ccf0122a40f9912c795a0d3ee843\",\"title\":\"الصفحة الرئيسية\",\"screenshot\":{\"name\":\"projects/15256257566096176068/files/1bca8902e0ef481e8bb1a2362a55bd16\",\"downloadUrl\":\"https://lh3.googleusercontent.com/aida/AP1WRLs5sZA2ImPSSBnoYyBotQatlI07EMY9Tha-0mRqdlWCV3Z5GuNjNYTTOsOq7oMg-Z8kUpj2IqxZtbGUQ9SaGAQq-1VDLJwgRmLafzXEtiQL2wEAsxteoqakvhA4LXOL3hynym59kh13UvGSSGEuZTgarWEnQ-HikLC202lacbo3CIRDEpRcYdt49dXKNQTVpfaHhGme59pwF5EVBCEnDMFAcqnGkwL-qIYlOSdTQU8c7Tr-gU_gCT47pmnj\"},\"htmlCode\":{\"name\":\"projects/15256257566096176068/files/4baff3929e8b42adb39d00ef93ac0457\",\"downloadUrl\":\"https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzVmODA4ODQxZTQ2YTQ4YzE4ZmM3ODk1ZDM3ZWY2MzBiEgsSBxCMovXtwAoYAZIBJAoKcHJvamVjdF9pZBIWQhQxNTI1NjI1NzU2NjA5NjE3NjA2OA&filename=&opi=89354086\",\"mimeType\":\"text/html\"},\"width\":\"780\",\"height\":\"2316\",\"deviceType\":\"MOBILE\"}",
+        "type": "text"
+      }
+    ],
+    "structuredContent": {
+      "deviceType": "MOBILE",
+      "height": "2316",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzVmODA4ODQxZTQ2YTQ4YzE4ZmM3ODk1ZDM3ZWY2MzBiEgsSBxCMovXtwAoYAZIBJAoKcHJvamVjdF9pZBIWQhQxNTI1NjI1NzU2NjA5NjE3NjA2OA&filename=&opi=89354086",
+        "mimeType": "text/html",
+        "name": "projects/15256257566096176068/files/4baff3929e8b42adb39d00ef93ac0457"
+      },
+      "name": "projects/15256257566096176068/screens/35b4ccf0122a40f9912c795a0d3ee843",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AP1WRLs5sZA2ImPSSBnoYyBotQatlI07EMY9Tha-0mRqdlWCV3Z5GuNjNYTTOsOq7oMg-Z8kUpj2IqxZtbGUQ9SaGAQq-1VDLJwgRmLafzXEtiQL2wEAsxteoqakvhA4LXOL3hynym59kh13UvGSSGEuZTgarWEnQ-HikLC202lacbo3CIRDEpRcYdt49dXKNQTVpfaHhGme59pwF5EVBCEnDMFAcqnGkwL-qIYlOSdTQU8c7Tr-gU_gCT47pmnj",
+        "name": "projects/15256257566096176068/files/1bca8902e0ef481e8bb1a2362a55bd16"
+      },
+      "title": "الصفحة الرئيسية",
+      "width": "780"
+    }
+  }
+}

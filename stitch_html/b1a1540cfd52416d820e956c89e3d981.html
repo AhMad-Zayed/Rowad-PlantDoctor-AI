@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Smart Plant Doctor AI - Plant Details</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#88d982",
+                        "primary-fixed": "#a3f69c",
+                        "secondary-fixed-dim": "#a2d3a4",
+                        "primary-fixed-dim": "#88d982",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#e8f5e9",
+                        "tertiary-fixed": "#d9e6da",
+                        "surface-container-low": "#f7f2f8",
+                        "tertiary-container": "#657167",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#3e4a41",
+                        "on-background": "#1c1b1f",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#bfcaba",
+                        "surface-variant": "#e5e1e7",
+                        "on-secondary-fixed": "#002109",
+                        "on-tertiary": "#ffffff",
+                        "inverse-on-surface": "#f4eff5",
+                        "on-secondary-container": "#426e47",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#ddd9de",
+                        "surface-container-highest": "#e5e1e7",
+                        "background": "#fdf8fd",
+                        "secondary-fixed": "#bdefbe",
+                        "on-primary-fixed-variant": "#005312",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#40493d",
+                        "tertiary": "#4d5950",
+                        "secondary-container": "#bdefbe",
+                        "surface-bright": "#fdf8fd",
+                        "surface-tint": "#1b6d24",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#24502c",
+                        "outline": "#707a6c",
+                        "surface": "#fdf8fd",
+                        "on-surface": "#1c1b1f",
+                        "primary": "#0d631b",
+                        "on-primary-container": "#cbffc2",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#131e17",
+                        "secondary": "#3c6842",
+                        "surface-container-high": "#ebe7ec",
+                        "surface-container": "#f1ecf2",
+                        "tertiary-fixed-dim": "#bdcabe",
+                        "primary-container": "#2e7d32",
+                        "inverse-surface": "#313034",
+                        "on-primary-fixed": "#002204"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "container-padding": "24px",
+                        "stack-lg": "32px",
+                        "stack-sm": "8px",
+                        "gutter": "16px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["IBM Plex Sans Arabic"],
+                        "headline-lg": ["IBM Plex Sans Arabic"],
+                        "title-lg": ["IBM Plex Sans Arabic"],
+                        "body-md": ["IBM Plex Sans Arabic"],
+                        "body-lg": ["IBM Plex Sans Arabic"],
+                        "headline-lg-mobile": ["IBM Plex Sans Arabic"],
+                        "label-lg": ["IBM Plex Sans Arabic"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["45px", { "lineHeight": "52px", "letterSpacing": "0px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "0px", "fontWeight": "600" }],
+                        "title-lg": ["22px", { "lineHeight": "28px", "fontWeight": "500" }],
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "label-lg": ["12px", { "lineHeight": "16px", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'IBM Plex Sans Arabic', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .material-symbols-outlined.filled { font-variation-settings: 'FILL' 1; }
+        
+        /* Hide scrollbar for tabs but keep functionality */
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface antialiased min-h-screen pb-24 md:pb-8">
+<!-- TopAppBar (Suppressed navigation intent as this is a detail screen, acting as a sub-page with a back action) -->
+<header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-surface/80 dark:bg-surface-dim/80 flex flex-row justify-between items-center px-container-padding w-full h-16">
+<button class="text-on-surface-variant hover:bg-surface-container-high rounded-full p-2 transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed md:font-headline-lg md:text-headline-lg truncate max-w-[60%]">
+            تفاصيل النبات
+        </h1>
+<button class="text-on-surface-variant hover:bg-surface-container-high rounded-full p-2 transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</header>
+<main class="pt-20 px-container-padding max-w-4xl mx-auto space-y-stack-lg">
+<!-- Hero Section: Plant Image & Basic Info -->
+<section class="relative rounded-xl overflow-hidden shadow-sm border border-surface-variant bg-surface-container-lowest">
+<div class="h-64 md:h-80 w-full relative">
+<img alt="صورة نبات القفص الصدري" class="w-full h-full object-cover" data-alt="A high-quality, brightly lit photograph of a healthy Monstera Deliciosa plant in a modern, minimalist setting. The large, glossy green leaves with characteristic holes are the focal point against a soft, light-mode white or light gray background. The overall aesthetic is clean, botanical, and expert, aligning with a premium plant care app. The lighting emphasizes the vibrant green hues of the plant." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQUKuSIBnRze6Eza6-Plkpo1k7J90SqqWoX45t2yZE5PgclWQQtsuNUjO_JZlx0K6h3hW8y0Ko7nsXTCB4ARO2fd5eLyJx9m05DAIXI11IwiHJtj6BTqIAgKybUwWfSvb2BZEfvoj1Mydf4akiWmkZ1grZ0zD2o6kfDZx1HDY2Xu5CNZytON0fF2AmNUGL0Ub-zIXI4311Z5Oh6dtOfT89z9y84-41rNEM9OXZe8lQ88WHAeHTSIXwniudSFEKj26hntRtOsBoaTHb"/>
+<!-- Health Status Chip Overlay -->
+<div class="absolute top-4 right-4 bg-primary-container text-on-primary-container px-3 py-1 rounded-full flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-sm filled">check_circle</span>
+<span class="font-label-lg text-label-lg">بحالة جيدة</span>
+</div>
+</div>
+<div class="p-container-padding flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+<div>
+<h2 class="font-title-lg text-title-lg text-primary">القفص الصدري (مونستيرا)</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Monstera Deliciosa</p>
+</div>
+<button class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-full font-label-lg text-label-lg flex items-center gap-2 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">edit</span>
+                    تعديل السجل
+                </button>
+</div>
+</section>
+<!-- Tab Navigation (Horizontal Scroll on Mobile) -->
+<div class="sticky top-16 z-40 bg-surface/90 backdrop-blur pt-2 pb-2 -mx-container-padding px-container-padding border-b border-surface-variant">
+<nav class="flex gap-4 overflow-x-auto hide-scrollbar pb-2 snap-x" id="plantTabs">
+<button class="snap-start shrink-0 px-4 py-2 rounded-full font-label-lg text-label-lg transition-colors bg-primary-container text-on-primary-container" data-target="section-general">معلومات عامة</button>
+<button class="snap-start shrink-0 px-4 py-2 rounded-full font-label-lg text-label-lg transition-colors text-on-surface-variant hover:bg-surface-container-low" data-target="section-environment">البيئة المناسبة</button>
+<button class="snap-start shrink-0 px-4 py-2 rounded-full font-label-lg text-label-lg transition-colors text-on-surface-variant hover:bg-surface-container-low" data-target="section-care">العناية</button>
+<button class="snap-start shrink-0 px-4 py-2 rounded-full font-label-lg text-label-lg transition-colors text-on-surface-variant hover:bg-surface-container-low" data-target="section-health">الحالة الصحية</button>
+</nav>
+</div>
+<!-- Content Sections -->
+<div class="space-y-stack-lg">
+<!-- Section 1: معلومات عامة -->
+<section class="scroll-mt-32" id="section-general">
+<h3 class="font-title-lg text-title-lg mb-stack-md flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined">info</span>
+                    معلومات عامة
+                </h3>
+<div class="bg-surface-container-lowest border border-surface-variant rounded-xl p-container-padding shadow-[0_4px_12px_rgba(0,0,0,0.04)]">
+<p class="font-body-lg text-body-lg text-on-surface mb-6 leading-relaxed">
+                        نبات القفص الصدري هو نبات استوائي شهير يتميز بأوراقه الكبيرة المشقوقة التي تشبه القفص الصدري. يعتبر من النباتات الداخلية المفضلة لسهولة العناية به ومظهره الجذاب الذي يضفي لمسة استوائية على أي مكان.
+                    </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex items-center gap-3 p-3 bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-secondary">family_history</span>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface-variant">العائلة</p>
+<p class="font-body-md text-body-md">اللوفية (Araceae)</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-secondary">public</span>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface-variant">الموطن الأصلي</p>
+<p class="font-body-md text-body-md">الغابات الاستوائية في أمريكا الوسطى</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: البيئة المناسبة -->
+<section class="scroll-mt-32" id="section-environment">
+<h3 class="font-title-lg text-title-lg mb-stack-md flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined">eco</span>
+                    البيئة المناسبة
+                </h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<!-- Bento Grid Style Cards for Environment Stats -->
+<div class="bg-surface-container-lowest border border-surface-variant rounded-xl p-4 shadow-[0_4px_12px_rgba(0,0,0,0.04)] flex flex-col items-center text-center gap-2">
+<span class="material-symbols-outlined text-3xl text-primary">light_mode</span>
+<p class="font-label-lg text-label-lg text-on-surface-variant">الإضاءة</p>
+<p class="font-body-md text-body-md font-medium">ساطعة غير مباشرة</p>
+</div>
+<div class="bg-surface-container-lowest border border-surface-variant rounded-xl p-4 shadow-[0_4px_12px_rgba(0,0,0,0.04)] flex flex-col items-center text-center gap-2">
+<span class="material-symbols-outlined text-3xl text-primary">device_thermostat</span>
+<p class="font-label-lg text-label-lg text-on-surface-variant">درجة الحرارة</p>
+<p class="font-body-md text-body-md font-medium">18° - 30° مئوية</p>
+</div>
+<div class="bg-surface-container-lowest border border-surface-variant rounded-xl p-4 shadow-[0_4px_12px_rgba(0,0,0,0.04)] flex flex-col items-center text-center gap-2">
+<span class="material-symbols-outlined text-3xl text-primary">humidity_mid</span>
+<p class="font-label-lg text-label-lg text-on-surface-variant">الرطوبة</p>
+<p class="font-body-md text-body-md font-medium">متوسطة إلى عالية</p>
+</div>
+<div class="bg-surface-container-lowest border border-surface-variant rounded-xl p-4 shadow-[0_4px_12px_rgba(0,0,0,0.04)] flex flex-col items-center text-center gap-2">
+<span class="material-symbols-outlined text-3xl text-primary">landscape</span>
+<p class="font-label-lg text-label-lg text-on-surface-variant">نوع التربة</p>
+<p class="font-body-md text-body-md font-medium">جيدة التصريف</p>
+</div>
+</div>
+</section>
+</div>
+</main>
+<script>
+        // Simple tab switching logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('#plantTabs button');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', (e) => {
+                    // Reset all tabs
+                    tabs.forEach(t => {
+                        t.classList.remove('bg-primary-container', 'text-on-primary-container');
+                        t.classList.add('text-on-surface-variant', 'hover:bg-surface-container-low');
+                    });
+                    
+                    // Set active tab
+                    const target = e.target;
+                    target.classList.remove('text-on-surface-variant', 'hover:bg-surface-container-low');
+                    target.classList.add('bg-primary-container', 'text-on-primary-container');
+                    
+                    // Smooth scroll to section (in a real app, you might just toggle visibility)
+                    const sectionId = target.getAttribute('data-target');
+                    const section = document.getElementById(sectionId);
+                    if(section) {
+                        section.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+    </script>
+</body></html>

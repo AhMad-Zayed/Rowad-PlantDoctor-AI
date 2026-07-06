@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Smart Plant Doctor AI - Capture</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#88d982",
+                        "primary-fixed": "#a3f69c",
+                        "secondary-fixed-dim": "#a2d3a4",
+                        "primary-fixed-dim": "#88d982",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#e8f5e9",
+                        "tertiary-fixed": "#d9e6da",
+                        "surface-container-low": "#f7f2f8",
+                        "tertiary-container": "#657167",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#3e4a41",
+                        "on-background": "#1c1b1f",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#bfcaba",
+                        "surface-variant": "#e5e1e7",
+                        "on-secondary-fixed": "#002109",
+                        "on-tertiary": "#ffffff",
+                        "inverse-on-surface": "#f4eff5",
+                        "on-secondary-container": "#426e47",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#ddd9de",
+                        "surface-container-highest": "#e5e1e7",
+                        "background": "#fdf8fd",
+                        "secondary-fixed": "#bdefbe",
+                        "on-primary-fixed-variant": "#005312",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#40493d",
+                        "tertiary": "#4d5950",
+                        "secondary-container": "#bdefbe",
+                        "surface-bright": "#fdf8fd",
+                        "surface-tint": "#1b6d24",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#24502c",
+                        "outline": "#707a6c",
+                        "surface": "#fdf8fd",
+                        "on-surface": "#1c1b1f",
+                        "primary": "#0d631b",
+                        "on-primary-container": "#cbffc2",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#131e17",
+                        "secondary": "#3c6842",
+                        "surface-container-high": "#ebe7ec",
+                        "surface-container": "#f1ecf2",
+                        "tertiary-fixed-dim": "#bdcabe",
+                        "primary-container": "#2e7d32",
+                        "inverse-surface": "#313034",
+                        "on-primary-fixed": "#002204"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "container-padding": "24px",
+                        "stack-lg": "32px",
+                        "stack-sm": "8px",
+                        "gutter": "16px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["IBM Plex Sans Arabic"],
+                        "headline-lg": ["IBM Plex Sans Arabic"],
+                        "title-lg": ["IBM Plex Sans Arabic"],
+                        "body-md": ["IBM Plex Sans Arabic"],
+                        "body-lg": ["IBM Plex Sans Arabic"],
+                        "headline-lg-mobile": ["IBM Plex Sans Arabic"],
+                        "label-lg": ["IBM Plex Sans Arabic"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["45px", { "lineHeight": "52px", "letterSpacing": "0px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "0px", "fontWeight": "600" }],
+                        "title-lg": ["22px", { "lineHeight": "28px", "fontWeight": "500" }],
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "label-lg": ["12px", { "lineHeight": "16px", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'IBM Plex Sans Arabic', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .icon-fill { font-variation-settings: 'FILL' 1; }
+        .pb-safe { padding-bottom: env(safe-area-inset-bottom, 20px); }
+        .image-preview-container { min-height: 50vh; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background antialiased flex flex-col min-h-screen">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-40 backdrop-blur-md bg-surface/80 dark:bg-surface-dim/80">
+<div class="flex flex-row-reverse justify-between items-center px-container-padding w-full h-16">
+<button class="text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest p-2 rounded-full transition-transform duration-200 active:scale-95 flex items-center justify-center">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed truncate px-4">
+                Smart Plant Doctor AI
+            </h1>
+<button class="text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest p-2 rounded-full transition-transform duration-200 active:scale-95 flex items-center justify-center">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex-grow flex flex-col pt-[80px] pb-[100px] px-container-padding max-w-2xl mx-auto w-full gap-stack-lg">
+<!-- Header Text -->
+<div class="text-center mt-stack-md">
+<h2 class="font-title-lg text-title-lg text-on-background mb-stack-sm">التشخيص الذكي</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">التقط صورة واضحة لنبتتك للحصول على تحليل دقيق لحالتها الصحية.</p>
+</div>
+<!-- Image Preview Area (Empty State) -->
+<div class="image-preview-container bg-surface-container-low border-2 border-dashed border-outline-variant rounded-[24px] flex flex-col items-center justify-center relative overflow-hidden transition-all duration-300" id="imagePreviewContainer">
+<!-- Empty State Content -->
+<div class="flex flex-col items-center justify-center p-8 text-center opacity-100 transition-opacity duration-300" id="emptyState">
+<div class="w-24 h-24 bg-surface-container rounded-full flex items-center justify-center mb-stack-md text-primary">
+<span class="material-symbols-outlined !text-[48px]">add_a_photo</span>
+</div>
+<p class="font-title-lg text-title-lg text-on-surface-variant mb-stack-sm">لم يتم اختيار صورة بعد</p>
+<p class="font-body-md text-body-md text-outline">يرجى التأكد من إضاءة النبتة جيداً</p>
+</div>
+<!-- Image State Content (Hidden Initially) -->
+<img alt="Selected Plant" class="absolute inset-0 w-full h-full object-cover hidden transition-opacity duration-300" data-alt="A macro photograph of a healthy Monstera Deliciosa leaf, well lit with natural daylight against a neutral background. The vibrant green tones stand out, showcasing detailed leaf veins and a slight glossy texture. The image fits perfectly within a modern digital UI frame, maintaining a clean, organic, and scientific aesthetic suitable for a botanical analysis app." id="selectedImage" src=""/>
+<!-- Scan Overlay (Hidden Initially) -->
+<div class="absolute inset-0 bg-primary/10 hidden" id="scanOverlay">
+<div class="absolute w-full h-1 bg-primary-fixed shadow-[0_0_15px_rgba(163,246,156,0.8)] animate-[scan_2s_ease-in-out_infinite]"></div>
+</div>
+</div>
+<style>
+            @keyframes scan {
+                0% { top: 0; opacity: 0; }
+                10% { opacity: 1; }
+                90% { opacity: 1; }
+                100% { top: 100%; opacity: 0; }
+            }
+        </style>
+<!-- Action Buttons - State 1 (Pick Image) -->
+<div class="flex flex-col gap-stack-md mt-auto" id="actionButtonsState1">
+<button class="w-full bg-primary text-on-primary font-title-lg text-title-lg py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-surface-tint transition-colors shadow-sm active:scale-[0.98]" onclick="simulateImageSelection()">
+<span class="material-symbols-outlined">photo_camera</span>
+                فتح الكاميرا
+            </button>
+<button class="w-full bg-surface-container text-on-surface font-title-lg text-title-lg py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-surface-container-high transition-colors active:scale-[0.98]" onclick="simulateImageSelection()">
+<span class="material-symbols-outlined">image</span>
+                اختيار من المعرض
+            </button>
+</div>
+<!-- Action Buttons - State 2 (Analyze) - Hidden Initially -->
+<div class="flex flex-col gap-stack-md mt-auto hidden" id="actionButtonsState2">
+<button class="w-full bg-primary text-on-primary font-title-lg text-title-lg py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-surface-tint transition-all shadow-md active:scale-[0.98] relative overflow-hidden" id="analyzeBtn" onclick="simulateAnalysis()">
+<span class="material-symbols-outlined">auto_awesome</span>
+<span id="analyzeBtnText">تحليل النبتة</span>
+</button>
+<button class="w-full bg-transparent border-2 border-outline text-on-surface-variant font-title-lg text-title-lg py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-surface-container-low transition-colors active:scale-[0.98]" onclick="resetSelection()">
+<span class="material-symbols-outlined">refresh</span>
+                إعادة اختيار الصورة
+            </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex flex-row-reverse justify-around items-center px-4 py-3 pb-safe bg-surface dark:bg-surface-dim shadow-[0_-2px_10px_rgba(0,0,0,0.05)] rounded-t-xl hidden md:hidden flex">
+<!-- الرئيسية (Active - Although contextually we might be in a tool, Home is a safe fallback if no exact match, but let's assume this is the main action from Home) -->
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary-container text-on-secondary-container rounded-full px-5 py-1 scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined icon-fill">home</span>
+<span class="font-label-lg text-label-lg mt-1">الرئيسية</span>
+</a>
+<!-- السجلات -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-container-low dark:hover:bg-surface-container-lowest px-5 py-1 rounded-full transition-all duration-150" href="#">
+<span class="material-symbols-outlined">history</span>
+<span class="font-label-lg text-label-lg mt-1">السجلات</span>
+</a>
+<!-- المساعد -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-container-low dark:hover:bg-surface-container-lowest px-5 py-1 rounded-full transition-all duration-150" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-lg text-label-lg mt-1">المساعد</span>
+</a>
+<!-- الإعدادات -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-container-low dark:hover:bg-surface-container-lowest px-5 py-1 rounded-full transition-all duration-150" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-label-lg text-label-lg mt-1">الإعدادات</span>
+</a>
+</nav>
+<script>
+        function simulateImageSelection() {
+            const container = document.getElementById('imagePreviewContainer');
+            const emptyState = document.getElementById('emptyState');
+            const selectedImage = document.getElementById('selectedImage');
+            const state1 = document.getElementById('actionButtonsState1');
+            const state2 = document.getElementById('actionButtonsState2');
+
+            // Simulate loading a placeholder image (using a generic nature placeholder for the effect)
+            selectedImage.src = 'https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=1000&auto=format&fit=crop';
+            
+            // Switch UI states
+            emptyState.style.opacity = '0';
+            setTimeout(() => {
+                emptyState.classList.add('hidden');
+                selectedImage.classList.remove('hidden');
+                // Small delay to allow display block to apply before opacity transition
+                setTimeout(() => {
+                    selectedImage.style.opacity = '1';
+                }, 50);
+                
+                container.classList.remove('border-dashed', 'border-outline-variant');
+                container.classList.add('border-solid', 'border-primary-fixed-dim', 'shadow-lg');
+            }, 300);
+
+            state1.classList.add('hidden');
+            state2.classList.remove('hidden');
+        }
+
+        function resetSelection() {
+            const container = document.getElementById('imagePreviewContainer');
+            const emptyState = document.getElementById('emptyState');
+            const selectedImage = document.getElementById('selectedImage');
+            const state1 = document.getElementById('actionButtonsState1');
+            const state2 = document.getElementById('actionButtonsState2');
+            const scanOverlay = document.getElementById('scanOverlay');
+            const analyzeBtn = document.getElementById('analyzeBtn');
+            const analyzeBtnText = document.getElementById('analyzeBtnText');
+
+            // Reset UI states
+            selectedImage.style.opacity = '0';
+            setTimeout(() => {
+                selectedImage.classList.add('hidden');
+                selectedImage.src = '';
+                emptyState.classList.remove('hidden');
+                setTimeout(() => {
+                    emptyState.style.opacity = '1';
+                }, 50);
+
+                container.classList.add('border-dashed', 'border-outline-variant');
+                container.classList.remove('border-solid', 'border-primary-fixed-dim', 'shadow-lg');
+            }, 300);
+
+            state2.classList.add('hidden');
+            state1.classList.remove('hidden');
+            
+            // Reset Analysis button if it was in loading state
+            scanOverlay.classList.add('hidden');
+            analyzeBtn.disabled = false;
+            analyzeBtn.classList.remove('opacity-80');
+            analyzeBtnText.textContent = 'تحليل النبتة';
+        }
+
+        function simulateAnalysis() {
+            const scanOverlay = document.getElementById('scanOverlay');
+            const analyzeBtn = document.getElementById('analyzeBtn');
+            const analyzeBtnText = document.getElementById('analyzeBtnText');
+
+            // Show scanning effect
+            scanOverlay.classList.remove('hidden');
+            
+            // Update button state
+            analyzeBtn.disabled = true;
+            analyzeBtn.classList.add('opacity-80');
+            analyzeBtnText.textContent = 'جاري التحليل...';
+
+            // Simulate API call delay
+            setTimeout(() => {
+                // Here you would normally redirect to results or show a modal
+                scanOverlay.classList.add('hidden');
+                analyzeBtnText.textContent = 'اكتمل التحليل';
+                analyzeBtn.classList.replace('bg-primary', 'bg-surface-tint');
+                
+                setTimeout(() => {
+                    alert('سيعرض هنا شاشة نتائج التحليل');
+                    resetSelection();
+                }, 1000);
+            }, 2500);
+        }
+    </script>
+</body></html>

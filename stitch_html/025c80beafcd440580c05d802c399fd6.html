@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Smart Plant Doctor AI - Splash Screen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#88d982",
+                        "primary-fixed": "#a3f69c",
+                        "secondary-fixed-dim": "#a2d3a4",
+                        "primary-fixed-dim": "#88d982",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#e8f5e9",
+                        "tertiary-fixed": "#d9e6da",
+                        "surface-container-low": "#f7f2f8",
+                        "tertiary-container": "#657167",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#3e4a41",
+                        "on-background": "#1c1b1f",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#bfcaba",
+                        "surface-variant": "#e5e1e7",
+                        "on-secondary-fixed": "#002109",
+                        "on-tertiary": "#ffffff",
+                        "inverse-on-surface": "#f4eff5",
+                        "on-secondary-container": "#426e47",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#ddd9de",
+                        "surface-container-highest": "#e5e1e7",
+                        "background": "#fdf8fd",
+                        "secondary-fixed": "#bdefbe",
+                        "on-primary-fixed-variant": "#005312",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#40493d",
+                        "tertiary": "#4d5950",
+                        "secondary-container": "#bdefbe",
+                        "surface-bright": "#fdf8fd",
+                        "surface-tint": "#1b6d24",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#24502c",
+                        "outline": "#707a6c",
+                        "surface": "#fdf8fd",
+                        "on-surface": "#1c1b1f",
+                        "primary": "#0d631b",
+                        "on-primary-container": "#cbffc2",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#131e17",
+                        "secondary": "#3c6842",
+                        "surface-container-high": "#ebe7ec",
+                        "surface-container": "#f1ecf2",
+                        "tertiary-fixed-dim": "#bdcabe",
+                        "primary-container": "#2e7d32",
+                        "inverse-surface": "#313034",
+                        "on-primary-fixed": "#002204"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "container-padding": "24px",
+                        "stack-lg": "32px",
+                        "stack-sm": "8px",
+                        "gutter": "16px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["IBM Plex Sans Arabic"],
+                        "headline-lg": ["IBM Plex Sans Arabic"],
+                        "title-lg": ["IBM Plex Sans Arabic"],
+                        "body-md": ["IBM Plex Sans Arabic"],
+                        "body-lg": ["IBM Plex Sans Arabic"],
+                        "headline-lg-mobile": ["IBM Plex Sans Arabic"],
+                        "label-lg": ["IBM Plex Sans Arabic"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["45px", { "lineHeight": "52px", "letterSpacing": "0px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "0px", "fontWeight": "600" }],
+                        "title-lg": ["22px", { "lineHeight": "28px", "fontWeight": "500" }],
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "label-lg": ["12px", { "lineHeight": "16px", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .progress-bar-animation {
+            animation: progress 2s ease-in-out infinite;
+        }
+        
+        @keyframes progress {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .pulse-logo {
+            animation: pulse 2.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(13, 99, 27, 0.2); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 20px rgba(13, 99, 27, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(13, 99, 27, 0); }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface h-screen w-screen flex flex-col items-center justify-between overflow-hidden relative">
+<!-- Decorative Background Elements -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-container rounded-full mix-blend-multiply filter blur-3xl opacity-20 -translate-y-1/2 translate-x-1/4"></div>
+<div class="absolute bottom-0 left-0 w-80 h-80 bg-secondary-container rounded-full mix-blend-multiply filter blur-3xl opacity-30 translate-y-1/3 -translate-x-1/4"></div>
+<div class="flex-1 flex flex-col items-center justify-center w-full px-container-padding z-10">
+<!-- Logo Section -->
+<div class="fade-in-up flex flex-col items-center justify-center mb-stack-lg" style="animation-delay: 0.2s;">
+<div class="w-32 h-32 rounded-full bg-primary-container text-primary flex items-center justify-center pulse-logo mb-stack-md shadow-lg">
+<span class="material-symbols-outlined text-[64px]" data-icon="potted_plant" data-weight="fill">potted_plant</span>
+</div>
+<!-- Typography -->
+<h1 class="font-display-lg text-display-lg text-primary text-center mb-stack-sm md:font-display-lg md:text-display-lg font-headline-lg-mobile text-headline-lg-mobile">
+                طبيب النباتات الذكي
+            </h1>
+<p class="font-title-lg text-title-lg text-on-surface-variant text-center max-w-sm">
+                تعرف على نباتاتك واعتنِ بها بسهولة
+            </p>
+</div>
+</div>
+<!-- Progress Indicator -->
+<div class="w-full px-container-padding pb-12 z-10 fade-in-up" style="animation-delay: 0.6s;">
+<div class="w-full h-1 bg-surface-variant rounded-full overflow-hidden relative">
+<div class="absolute top-0 right-0 h-full w-1/3 bg-primary rounded-full progress-bar-animation"></div>
+</div>
+<p class="font-label-lg text-label-lg text-on-surface-variant text-center mt-stack-sm opacity-70">
+            جاري التحميل...
+        </p>
+</div>
+<!-- Initialization Script (Simulation) -->
+<script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Simulate a brief loading time before "redirecting" or fading out
+            setTimeout(() => {
+                document.body.style.transition = "opacity 0.5s ease-out";
+                document.body.style.opacity = "0";
+            }, 3500); // 3.5 seconds
+        });
+    </script>
+</body></html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Smart Plant Doctor AI - الإعدادات</title>
+<!-- Fonts and Icons -->
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-primary": "#88d982",
+                      "primary-fixed": "#a3f69c",
+                      "secondary-fixed-dim": "#a2d3a4",
+                      "primary-fixed-dim": "#88d982",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-container": "#e8f5e9",
+                      "tertiary-fixed": "#d9e6da",
+                      "surface-container-low": "#f7f2f8",
+                      "tertiary-container": "#657167",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-fixed-variant": "#3e4a41",
+                      "on-background": "#1c1b1f",
+                      "on-primary": "#ffffff",
+                      "outline-variant": "#bfcaba",
+                      "surface-variant": "#e5e1e7",
+                      "on-secondary-fixed": "#002109",
+                      "on-tertiary": "#ffffff",
+                      "inverse-on-surface": "#f4eff5",
+                      "on-secondary-container": "#426e47",
+                      "error": "#ba1a1a",
+                      "surface-dim": "#ddd9de",
+                      "surface-container-highest": "#e5e1e7",
+                      "background": "#fdf8fd",
+                      "secondary-fixed": "#bdefbe",
+                      "on-primary-fixed-variant": "#005312",
+                      "on-secondary": "#ffffff",
+                      "on-surface-variant": "#40493d",
+                      "tertiary": "#4d5950",
+                      "secondary-container": "#bdefbe",
+                      "surface-bright": "#fdf8fd",
+                      "surface-tint": "#1b6d24",
+                      "on-error": "#ffffff",
+                      "on-secondary-fixed-variant": "#24502c",
+                      "outline": "#707a6c",
+                      "surface": "#fdf8fd",
+                      "on-surface": "#1c1b1f",
+                      "primary": "#0d631b",
+                      "on-primary-container": "#cbffc2",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-fixed": "#131e17",
+                      "secondary": "#3c6842",
+                      "surface-container-high": "#ebe7ec",
+                      "surface-container": "#f1ecf2",
+                      "tertiary-fixed-dim": "#bdcabe",
+                      "primary-container": "#2e7d32",
+                      "inverse-surface": "#313034",
+                      "on-primary-fixed": "#002204"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-md": "16px",
+                      "container-padding": "24px",
+                      "stack-lg": "32px",
+                      "stack-sm": "8px",
+                      "gutter": "16px",
+                      "base": "8px"
+              },
+              "fontFamily": {
+                      "display-lg": [
+                              "IBM Plex Sans Arabic"
+                      ],
+                      "headline-lg": [
+                              "IBM Plex Sans Arabic"
+                      ],
+                      "title-lg": [
+                              "IBM Plex Sans Arabic"
+                      ],
+                      "body-md": [
+                              "IBM Plex Sans Arabic"
+                      ],
+                      "body-lg": [
+                              "IBM Plex Sans Arabic"
+                      ],
+                      "headline-lg-mobile": [
+                              "IBM Plex Sans Arabic"
+                      ],
+                      "label-lg": [
+                              "IBM Plex Sans Arabic"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg": [
+                              "45px",
+                              {
+                                      "lineHeight": "52px",
+                                      "letterSpacing": "0px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "0px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "title-lg": [
+                              "22px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "36px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-lg": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+          body {
+              font-family: 'IBM Plex Sans Arabic', sans-serif;
+          }
+          /* Hide scrollbar for clean UI */
+          ::-webkit-scrollbar {
+              display: none;
+          }
+          /* Custom toggle styles */
+          input:checked ~ .dot {
+              transform: translateX(-100%);
+              background-color: white;
+          }
+          input:checked ~ .block {
+              background-color: #0d631b; /* primary color */
+          }
+      </style>
+</head>
+<body class="bg-surface text-on-surface antialiased min-h-screen pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-[60] backdrop-blur-md bg-surface/80 dark:bg-surface-dim/80 flex flex-row-reverse justify-between items-center px-container-padding w-full h-16 flat no shadows">
+<button class="text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest p-2 rounded-full transition-transform duration-200 active:scale-95">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary dark:text-primary-fixed truncate px-4">Smart Plant Doctor AI</h1>
+<button class="text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest p-2 rounded-full transition-transform duration-200 active:scale-95">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</header>
+<!-- Main Canvas -->
+<main class="px-container-padding pt-stack-lg max-w-3xl mx-auto md:ml-80">
+<div class="mb-stack-lg">
+<h2 class="font-title-lg text-title-lg text-on-surface mb-stack-sm">الإعدادات</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">تخصيص تجربتك مع التطبيق</p>
+</div>
+<!-- Settings List Container -->
+<div class="bg-surface-container-low rounded-xl border border-surface-variant/50 shadow-sm overflow-hidden mb-stack-lg">
+<!-- Dark Mode Toggle -->
+<div class="flex items-center justify-between p-stack-md border-b border-surface-variant/30 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-stack-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">dark_mode</span>
+<span class="font-body-lg text-body-lg">الوضع الليلي</span>
+</div>
+<!-- Toggle switch -->
+<label class="flex items-center cursor-pointer" for="toggle-dark">
+<div class="relative">
+<input class="sr-only" id="toggle-dark" type="checkbox"/>
+<div class="block bg-surface-variant w-14 h-8 rounded-full transition-colors duration-300"></div>
+<div class="dot absolute right-1 top-1 bg-white w-6 h-6 rounded-full transition-transform duration-300 shadow-sm flex items-center justify-center"></div>
+</div>
+</label>
+</div>
+<!-- Language -->
+<button class="w-full flex items-center justify-between p-stack-md border-b border-surface-variant/30 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-stack-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">language</span>
+<span class="font-body-lg text-body-lg">تغيير اللغة</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md text-on-surface-variant">العربية</span>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_left</span>
+</div>
+</button>
+<!-- Privacy Policy -->
+<button class="w-full flex items-center justify-between p-stack-md border-b border-surface-variant/30 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-stack-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">privacy_tip</span>
+<span class="font-body-lg text-body-lg">سياسة الخصوصية</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_left</span>
+</button>
+<!-- About -->
+<button class="w-full flex items-center justify-between p-stack-md border-b border-surface-variant/30 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-stack-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">info</span>
+<span class="font-body-lg text-body-lg">حول التطبيق</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_left</span>
+</button>
+<!-- Rate App -->
+<button class="w-full flex items-center justify-between p-stack-md border-b border-surface-variant/30 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-stack-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-lg text-body-lg">تقييم التطبيق</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_left</span>
+</button>
+<!-- Share App -->
+<button class="w-full flex items-center justify-between p-stack-md hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-stack-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">share</span>
+<span class="font-body-lg text-body-lg">مشاركة التطبيق</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_left</span>
+</button>
+</div>
+<!-- Account Section (Generated to fill out settings) -->
+<div class="bg-surface-container-low rounded-xl border border-surface-variant/50 shadow-sm overflow-hidden">
+<button class="w-full flex items-center justify-between p-stack-md hover:bg-surface-container-high transition-colors text-error">
+<div class="flex items-center gap-stack-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">logout</span>
+<span class="font-body-lg text-body-lg">تسجيل الخروج</span>
+</div>
+</button>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex flex-row-reverse justify-around items-center px-4 py-3 pb-safe bg-surface dark:bg-surface-dim shadow-[0_-1px_3px_rgba(0,0,0,0.05)] rounded-t-xl">
+<!-- Home (Inactive) -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-container-low dark:hover:bg-surface-container-lowest transition-all duration-150 p-2 rounded-lg">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-label-lg text-label-lg">الرئيسية</span>
+</button>
+<!-- History (Inactive) -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-container-low dark:hover:bg-surface-container-lowest transition-all duration-150 p-2 rounded-lg">
+<span class="material-symbols-outlined mb-1">history</span>
+<span class="font-label-lg text-label-lg">السجلات</span>
+</button>
+<!-- Assistant (Inactive) -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-container-low dark:hover:bg-surface-container-lowest transition-all duration-150 p-2 rounded-lg">
+<span class="material-symbols-outlined mb-1">smart_toy</span>
+<span class="font-label-lg text-label-lg">المساعد</span>
+</button>
+<!-- Settings (Active) -->
+<button class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary-container text-on-secondary-container rounded-full px-5 py-1 scale-90 transition-all duration-150">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-label-lg text-label-lg">الإعدادات</span>
+</button>
+</nav>
+<!-- NavigationDrawer (Desktop Only) -->
+<aside class="hidden md:flex fixed right-0 top-0 h-full z-[60] flex-col py-6 bg-surface-container-low dark:bg-surface-container-lowest shadow-xl docked full-height right-0 w-80 rounded-l-xl">
+<!-- Header -->
+<div class="px-6 mb-8 flex flex-col items-end text-right">
+<img alt="صورة الملف الشخصي للمستخدم" class="w-16 h-16 rounded-full mb-4 object-cover border-2 border-primary" data-alt="A macro shot of a single green plant leaf covered in morning dew drops, brightly lit to serve as a calming nature-themed user avatar. Modern natural aesthetic with a soft focus background." src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<h2 class="font-title-lg text-title-lg text-on-surface mb-1">مرحباً بك</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">هاوي زراعة</p>
+<span class="inline-block mt-2 bg-tertiary-container text-on-tertiary-container font-label-lg text-label-lg px-2 py-1 rounded-full">عضوية بريميوم</span>
+</div>
+<!-- Navigation Links -->
+<nav class="flex-1 overflow-y-auto">
+<!-- Inactive -->
+<a class="flex flex-row-reverse items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-colors mb-2" href="#">
+<span class="material-symbols-outlined">psychology_alt</span>
+<span class="font-body-lg text-body-lg">نباتاتي</span>
+</a>
+<!-- Inactive -->
+<a class="flex flex-row-reverse items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-colors mb-2" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="font-body-lg text-body-lg">المفضلة</span>
+</a>
+<!-- Inactive -->
+<a class="flex flex-row-reverse items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-colors mb-2" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="font-body-lg text-body-lg">الموسوعة</span>
+</a>
+<!-- Active (Settings isn't explicitly in drawer JSON but implied as active intent if using desktop nav for settings page. Mapped to 'عن التطبيق' roughly or appended. We'll append settings to drawer for logical consistency since bottom nav has it) -->
+<a class="flex flex-row-reverse items-center gap-4 bg-primary-container text-on-primary-container rounded-full px-4 py-3 mx-2 opacity-80 transition-opacity mb-2" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-body-lg text-body-lg font-bold">الإعدادات</span>
+</a>
+<!-- Inactive -->
+<a class="flex flex-row-reverse items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-colors mb-2" href="#">
+<span class="material-symbols-outlined">support_agent</span>
+<span class="font-body-lg text-body-lg">الدعم</span>
+</a>
+<!-- Inactive -->
+<a class="flex flex-row-reverse items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-colors mb-2" href="#">
+<span class="material-symbols-outlined">info</span>
+<span class="font-body-lg text-body-lg">عن التطبيق</span>
+</a>
+</nav>
+</aside>
+<script>
+        // Simple script for the toggle to visually update (logic handled by CSS sibling selectors above)
+        document.getElementById('toggle-dark').addEventListener('change', function() {
+            // In a real app, this would toggle the 'dark' class on the documentElement
+            // For now it just animates visually
+        });
+    </script>
+</body></html>

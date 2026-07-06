@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>نتيجة الفحص - Smart Plant Doctor AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#88d982",
+                        "primary-fixed": "#a3f69c",
+                        "secondary-fixed-dim": "#a2d3a4",
+                        "primary-fixed-dim": "#88d982",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#e8f5e9",
+                        "tertiary-fixed": "#d9e6da",
+                        "surface-container-low": "#f7f2f8",
+                        "tertiary-container": "#657167",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#3e4a41",
+                        "on-background": "#1c1b1f",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#bfcaba",
+                        "surface-variant": "#e5e1e7",
+                        "on-secondary-fixed": "#002109",
+                        "on-tertiary": "#ffffff",
+                        "inverse-on-surface": "#f4eff5",
+                        "on-secondary-container": "#426e47",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#ddd9de",
+                        "surface-container-highest": "#e5e1e7",
+                        "background": "#fdf8fd",
+                        "secondary-fixed": "#bdefbe",
+                        "on-primary-fixed-variant": "#005312",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#40493d",
+                        "tertiary": "#4d5950",
+                        "secondary-container": "#bdefbe",
+                        "surface-bright": "#fdf8fd",
+                        "surface-tint": "#1b6d24",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#24502c",
+                        "outline": "#707a6c",
+                        "surface": "#fdf8fd",
+                        "on-surface": "#1c1b1f",
+                        "primary": "#0d631b",
+                        "on-primary-container": "#cbffc2",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#131e17",
+                        "secondary": "#3c6842",
+                        "surface-container-high": "#ebe7ec",
+                        "surface-container": "#f1ecf2",
+                        "tertiary-fixed-dim": "#bdcabe",
+                        "primary-container": "#2e7d32",
+                        "inverse-surface": "#313034",
+                        "on-primary-fixed": "#002204"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "container-padding": "24px",
+                        "stack-lg": "32px",
+                        "stack-sm": "8px",
+                        "gutter": "16px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["IBM Plex Sans Arabic"],
+                        "headline-lg": ["IBM Plex Sans Arabic"],
+                        "title-lg": ["IBM Plex Sans Arabic"],
+                        "body-md": ["IBM Plex Sans Arabic"],
+                        "body-lg": ["IBM Plex Sans Arabic"],
+                        "headline-lg-mobile": ["IBM Plex Sans Arabic"],
+                        "label-lg": ["IBM Plex Sans Arabic"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["45px", { "lineHeight": "52px", "letterSpacing": "0px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "0px", "fontWeight": "600" }],
+                        "title-lg": ["22px", { "lineHeight": "28px", "fontWeight": "500" }],
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "label-lg": ["12px", { "lineHeight": "16px", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'IBM Plex Sans Arabic', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-safe">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-40 backdrop-blur-md bg-surface/80 shadow-sm transition-all duration-300">
+<div class="flex flex-row justify-between items-center px-container-padding h-16 max-w-4xl mx-auto w-full">
+<button class="text-on-surface-variant hover:bg-surface-container-high p-2 rounded-full transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold">Smart Plant Doctor AI</h1>
+<button class="text-on-surface-variant hover:bg-surface-container-high p-2 rounded-full transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</button>
+</div>
+</header>
+<main class="pt-16 pb-24 md:pb-8 max-w-4xl mx-auto">
+<!-- Hero Image Section -->
+<section class="relative w-full h-[353px] md:h-[442px] overflow-hidden rounded-b-3xl md:rounded-3xl shadow-sm mb-6">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest/80 to-transparent z-10 mix-blend-multiply"></div>
+<img alt="Monstera plant" class="w-full h-full object-cover" data-alt="A lush, vibrant green Monstera Deliciosa plant taking center stage in a well-lit modern indoor setting. The large fenestrated leaves are crisp and healthy, illuminated by soft natural sunlight streaming through a nearby window. The background is slightly blurred, emphasizing the botanical subject with a clean, light-mode aesthetic and a subtle, warm organic feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANJKHAiEu79mqNjxRcvSh-a6E48PspILhX64dyKCaTcWaQhuZmMAKolXTdCGR_z4PUvQl11k_XulkHYuoUDGPVmFdtVlvyi3XlshRLfR4TJqtiJVAHdV6Q_--dfCSM-dcB2D3VBG7v5xREMJzepoMJxvf4tJgFqmJ6yDYO5-2AFzT8TkKTdhZdeLqS0d9rGHGG_TlSyI08H5C-Iv_VZOn63K9yMs1cDYMaEZ5kF14x18lPtGkYwQVRbcdfihRJzx-sHE28wicblYDA"/>
+<!-- Overlay Badges -->
+<div class="absolute bottom-6 left-container-padding right-container-padding z-20 flex justify-between items-end">
+<div class="bg-primary/90 backdrop-blur-md text-on-primary px-4 py-2 rounded-full shadow-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="verified">verified</span>
+<span class="font-label-lg text-label-lg font-medium">98% ثقة</span>
+</div>
+<div class="bg-surface-container-lowest/90 backdrop-blur-md text-primary px-4 py-2 rounded-full shadow-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="health_and_safety">health_and_safety</span>
+<span class="font-label-lg text-label-lg font-medium text-primary">النبتة بصحة جيدة</span>
+</div>
+</div>
+</section>
+<div class="px-container-padding space-y-6">
+<!-- Diagnosis Card -->
+<section class="bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant/30 flex flex-col gap-4 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-full -z-0"></div>
+<div class="flex flex-col gap-1 z-10">
+<h2 class="font-display-lg text-display-lg md:text-[36px] text-on-background font-bold">مونستيرا</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic">Monstera Deliciosa</p>
+</div>
+<div class="h-px bg-surface-variant w-full my-2"></div>
+<div class="flex items-center gap-4 z-10">
+<!-- Circular Progress -->
+<div class="relative w-16 h-16 flex items-center justify-center shrink-0">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<!-- Background Circle -->
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<!-- Progress Circle -->
+<path class="text-primary transition-all duration-1000 ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="95, 100" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+<div class="absolute flex flex-col items-center justify-center">
+<span class="font-title-lg text-title-lg text-primary font-bold">95<span class="text-sm">%</span></span>
+</div>
+</div>
+<div class="flex flex-col justify-center">
+<span class="font-title-lg text-title-lg text-on-background font-semibold">ممتازة</span>
+<span class="font-body-md text-body-md text-on-surface-variant">الحالة الصحية العامة للنبتة تبدو رائعة. استمر في العناية بها بنفس الطريقة.</span>
+</div>
+</div>
+</section>
+<!-- Quick Stats Bento Grid -->
+<section class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low rounded-xl p-4 flex items-start gap-3 shadow-sm border border-outline-variant/20 hover:bg-surface-container transition-colors cursor-pointer">
+<div class="bg-secondary-container text-on-secondary-container p-2 rounded-lg">
+<span class="material-symbols-outlined" data-icon="water_drop">water_drop</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface-variant mb-1">الرطوبة المطلوبة</span>
+<span class="font-body-md text-body-md text-on-background font-medium">متوسطة إلى عالية</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-4 flex items-start gap-3 shadow-sm border border-outline-variant/20 hover:bg-surface-container transition-colors cursor-pointer">
+<div class="bg-secondary-container text-on-secondary-container p-2 rounded-lg">
+<span class="material-symbols-outlined" data-icon="light_mode">light_mode</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface-variant mb-1">الإضاءة</span>
+<span class="font-body-md text-body-md text-on-background font-medium">ساطعة غير مباشرة</span>
+</div>
+</div>
+</section>
+<!-- Actions Section -->
+<section class="flex flex-col sm:flex-row gap-4 mt-8 pb-8">
+<button class="flex-1 bg-primary text-on-primary font-title-lg text-title-lg py-4 px-6 rounded-xl shadow-md hover:shadow-lg hover:bg-primary/90 transition-all active:scale-[0.98] flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" data-icon="read_more">read_more</span>
+                    عرض التفاصيل الكاملة
+                </button>
+<button class="flex-1 bg-surface-container-high text-on-background font-title-lg text-title-lg py-4 px-6 rounded-xl border border-outline-variant/50 hover:bg-surface-container-highest transition-all active:scale-[0.98] flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+                    حفظ النتيجة
+                </button>
+</section>
+</div>
+</main>
+</body></html>
